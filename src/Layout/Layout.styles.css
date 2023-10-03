@@ -1,0 +1,12 @@
+.layout{
+  background-color: black;
+  padding-top: 15px;
+}
+.navigation {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+} 
+  

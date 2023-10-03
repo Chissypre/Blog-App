@@ -1,0 +1,12 @@
+/* Add these styles to your CSS file */
+.Home {
+    background-color:whitesmoke; /* Background color */
+    color: #000000; /* Text color */
+    padding: 20px; /* Add padding to the content */
+  }
+  
+  .Home p {
+    font-size: 18px; /* Adjust the font size */
+    margin-top: 2rem;
+  }
+  

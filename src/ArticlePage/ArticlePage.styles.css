@@ -1,0 +1,90 @@
+/* ArticlePage.css */
+
+/* CSS Styles for the Blog Post Page */
+
+.ArticlePage {
+  padding: 20px;
+}
+
+.articlepage {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.articlepage-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.article-title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.articlepage-date {
+  color: #777;
+}
+
+.articlepage-time {
+  color: #777;
+}
+
+.articlepage-writer {
+  color: #777;
+}
+
+.articlepage-text {
+  line-height: 1.6;
+}
+
+.editButton {
+  background-color: #fb9900;
+  border-radius: 10px;
+  color: black;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.editButton:hover {
+  background-color: black;
+  color: white;
+}
+.deleteButton {
+  background-color:red;
+  border-radius: 10px;
+  color: black;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Style for the "Post Not Found" message */
+h2 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #333;
+}
+
+p {
+  color: #777;
+  line-height: 1.6;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

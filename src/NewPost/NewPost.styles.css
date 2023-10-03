@@ -1,0 +1,47 @@
+.NewPost {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 20px;
+  }
+
+  .NewPost h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .newPostForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newPostForm label {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .newPostForm input[type="text"],
+  .newPostForm textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .newPostForm input[type="file"] {
+    margin-bottom: 15px;
+  }
+
+  .newPostForm button {
+    background-color: #FB9900;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .newPostForm button:hover {
+    background-color: #FFCC00;
+  }

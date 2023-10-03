@@ -1,0 +1,68 @@
+/* CSS for the Contact Page Component */
+
+.ContactPage {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ContactPage h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .ContactPage p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .conform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .conform-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .conlabel {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .coninput[type="text"],
+  .coninput[type="email"],
+  .contextarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contextarea {
+    height: 150px;
+  }
+  
+  .conbutton[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .conbutton[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  

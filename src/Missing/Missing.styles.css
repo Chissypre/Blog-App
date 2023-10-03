@@ -1,0 +1,26 @@
+.Missing {
+    background-color: #FB9900;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .Missing h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .Missing p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .Missing a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .Missing a:hover {
+    text-decoration: underline;
+  }
