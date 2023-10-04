@@ -2,6 +2,8 @@
   background-color: #FFFFFF;
   color: #000000;
   padding: 20px;
+  flex-grow: 1;
+  height: 100vh;
 }
 
 .NewPost h2 {

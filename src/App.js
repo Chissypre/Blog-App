@@ -9,7 +9,7 @@ import NewPost from './NewPost/NewPost';
 import EditPost from './EditPost/EditPost';
 import { format } from 'date-fns';
 import { Route, Routes, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 function App() {
@@ -74,10 +74,19 @@ function App() {
   const [search, setSearch] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [articleTitle, setArticleTitle] = useState('');
-  const [articleBody, setArticleBody] = useState('');
+  const [articleText, setArticleText] = useState('');
   const [writeName, setWriteName] = useState('');
   const [imageFile, setImageFile] = useState(null);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const filteredResults = articles.filter((article) =>
+      ((article.articleText).toLowerCase()).includes(search.toLowerCase())
+      || ((article.title).toLowerCase()).includes(search.toLowerCase()));
+
+    setSearchResults(filteredResults.reverse());
+  }, [articles, search])
+
 
   const currentDatetime = new Date();
     const formattedDatetime = format(currentDatetime, 'MMMM dd, yyyy pp');
@@ -88,20 +97,21 @@ const timeDifference = Math.floor((currentDatetime - providedDatetime) / (1000 *
 
 const handleSubmit = (e) => {
     e.preventDefault();
+    const id = articles.length ? articles[articles.length - 1].id + 1 : 1;
     const newArticle = {
-      id: 1, 
+      id: id, 
       title: articleTitle,
       imageSrc:imageFile ? URL.createObjectURL(imageFile) : '', 
       datetime: formattedDatetime,
       timeLength: `${timeDifference} min`, 
       writerName: writeName,
-      articleText: articleBody,
+      articleText: articleText,
     };
     const newArticles = [...articles, newArticle];
     setArticles(newArticles);
     // Clear the input fields
     setArticleTitle('');
-    setArticleBody('');
+    setArticleText('');
     setWriteName('');
     setImageFile(null);
     navigate('/');
@@ -120,15 +130,18 @@ const handleSubmit = (e) => {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Layout/>}>
-          <Route index element={<Home articles={articles} />}/>
+        <Route path="/" element={<Layout
+         search={search}
+         setSearch={setSearch}
+        />}>
+          <Route index element={<Home articles={searchResults} />}/>
         <Route path="article" element={<NewPost
             handleSubmit={handleSubmit}
             handleImageChange={handleImageChange}
             articleTitle={articleTitle}
             setArticleTitle={setArticleTitle}
-            articleBody={articleBody}
-            setArticleBody={setArticleBody}
+            articleText={articleText}
+            setArticleText={setArticleText}
             writeName={writeName}
             setWriteName={setWriteName}
             imageFile={imageFile}

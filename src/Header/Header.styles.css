@@ -1,8 +1,46 @@
+.Header{
+  flex-direction:row;
+  display: flex;
+  justify-content: space-between;
+}
 .logo-container {
     height: 100%;
     width: 70px;
-    padding: 10px;
+    padding:0 5px;
+    margin: 0 60px;
+    
     
   }
+  .searchContainer {
+    display: block;
+    align-items: center;
+    margin: 0 80px;
+}
+
+input#search {
+    flex: 1;
+    padding: 10px 80px;
+    border: 1px solid #fb9900;
+    border-radius: 5px;
+}
+
+button.searchButton {
+  background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+button.searchButton:hover {
+    background-color: yellow; 
+}
+
+.searchIcon {
+    color: #FB9900;
+    font-size: 18px; 
+    margin-left: 5px; 
+}
+
 
   

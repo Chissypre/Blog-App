@@ -3,6 +3,8 @@
     color: #000000;
     text-align: center;
     padding: 20px;
+    flex-grow: 1;
+    height: 100vh;
   }
 
   .Missing h2 {

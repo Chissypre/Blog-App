@@ -1,7 +1,7 @@
 import './NewPost.styles.css'
 
 const NewPost = ({
-    handleSubmit, articleTitle, setArticleTitle, articleBody, setArticleBody,  handleImageChange, writeName, setWriteName
+    handleSubmit, articleTitle, setArticleTitle, articleText, setArticleText,  handleImageChange, writeName, setWriteName
 }) => {
     return (
         <main className="NewPost">
@@ -19,8 +19,8 @@ const NewPost = ({
                 <textarea
                     id="articleBody"
                     required
-                    value={articleBody}
-                    onChange={(e) => setArticleBody(e.target.value)}
+                    value={articleText}
+                    onChange={(e) => setArticleText(e.target.value)}
                 />
                 <label htmlFor="writeName">Writers Name:</label>
                 <textarea

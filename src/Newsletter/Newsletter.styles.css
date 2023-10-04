@@ -6,6 +6,8 @@
     border-radius: 5px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    height: 100vh;
   }
   
   .NewsletterSignup h2 {
