@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Blog-App/static/css/main.313b0182.css",
-    "main.js": "/Blog-App/static/js/main.1d02b323.js",
-    "static/media/tech logo.svg": "/Blog-App/static/media/tech logo.20493dccdd02a64448a6ac76dae48b7a.svg",
+    "main.css": "/Blog-App/static/css/main.52d684d4.css",
+    "main.js": "/Blog-App/static/js/main.d050fb08.js",
+    "static/media/tech logo.svg": "/Blog-App/static/media/tech logo.74eb6a7c5b2a416b0402e23dd54153f5.svg",
     "index.html": "/Blog-App/index.html",
-    "main.313b0182.css.map": "/Blog-App/static/css/main.313b0182.css.map",
-    "main.1d02b323.js.map": "/Blog-App/static/js/main.1d02b323.js.map"
+    "main.52d684d4.css.map": "/Blog-App/static/css/main.52d684d4.css.map",
+    "main.d050fb08.js.map": "/Blog-App/static/js/main.d050fb08.js.map"
   },
   "entrypoints": [
-    "static/css/main.313b0182.css",
-    "static/js/main.1d02b323.js"
+    "static/css/main.52d684d4.css",
+    "static/js/main.d050fb08.js"
   ]
 }
