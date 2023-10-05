@@ -2,7 +2,6 @@ import './App.css'
 import Layout from '../src/Layout/Layout';
 import Home from '../src/Home/Home';
 import About from '../src/About/About';
-import Missing from '../src/Missing/Missing';
 import Newsletter from './Newsletter/Newsletter';
 import Contact from './Contact/Contact';
 import ArticlePage from './ArticlePage/ArticlePage';
@@ -131,7 +130,7 @@ const handleSubmit = (e) => {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Layout
+      <Route path="/" element={<Layout
          search={search}
          setSearch={setSearch}
         />}>
@@ -159,7 +158,7 @@ const handleSubmit = (e) => {
         <Route path="about" element={<About/>} />
         <Route path="Newsletter" element={<Newsletter/>} />
         <Route path="Contact" element={<Contact/>} />
-        <Route path="*" element={<Missing/>} />
+       
         </Route>
       </Routes>
        </div>
