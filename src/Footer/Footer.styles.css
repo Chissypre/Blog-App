@@ -1,19 +1,19 @@
-/* Add these styles to your CSS file */
+
 .Footer {
-    background-color: #000000; /* Background color */
-    color: #FFFFFF; /* Text color */
-    text-align: center; /* Center-align the text */
-    padding: 20px; /* Add padding to the footer */
-    font-size: 14px; /* Adjust the font size */
+    background-color: #000000; 
+    color: #FFFFFF; 
+    text-align: center; 
+    padding: 20px; 
+    font-size: 14px; 
   }
   
   .Footer p {
-    margin: 0; /* Remove default margin for the paragraph */
+    margin: 0; 
   }
   
-  /* Style the copyright symbol */
+
   .Footer::after {
-    content: '\00a9'; /* Copyright symbol */
-    margin-left: 5px; /* Add some space between text and symbol */
+    content: '\00a9'; 
+    margin-left: 5px; 
   }
   

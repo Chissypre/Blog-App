@@ -6,9 +6,7 @@ function NewsletterSignup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can add your logic to handle the form submission here (e.g., sending the email to a server).
     console.log(`Subscribed with email: ${email}`);
-    // Clear the input field after submission
     setEmail('');
   };
 

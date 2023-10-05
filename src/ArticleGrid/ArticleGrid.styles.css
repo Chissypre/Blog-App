@@ -2,19 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: -15px; 
+}
+@media (max-width: 950px) {
+  .article-grid {
+    justify-content: center; 
+}
 }
 
-/* Media query for screens smaller than 768px */
-@media (max-width: 768px) {
-  .article-grid {
-    justify-content: center; /* Center the items on smaller screens */
-  }
-}
 
-/* Media query for screens smaller than 576px */
-@media (max-width: 576px) {
-  .article-grid {
-    flex-direction: column; /* Stack items vertically on screens smaller than 576px */
-    align-items: center; /* Center-align items vertically */
-  }
-}
+
+

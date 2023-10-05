@@ -1,16 +1,19 @@
-/* CSS for the About Section */
 
 .AboutSection {
     background-color: #f7f7f7;
-    padding: 50px 0;
+    padding:10px 10px;
     text-align: center;
     flex-grow: 1;
-    height: 100vh;
+    height: 100%;
   }
   
   .AboutContent {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width:100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    justify-content: flex-start;
+    
   }
   
   .AboutContent h2 {
@@ -36,10 +39,8 @@
     color: #333;
     line-height: 1.6;
     margin-bottom: 10px;
-    list-style-type:none ;
   }
   
-  /* Style links within the About section */
   .AboutContent a {
     color: #007bff;
     text-decoration: none;
@@ -48,4 +49,16 @@
   .AboutContent a:hover {
     text-decoration: underline;
   }
+  
+@media (max-width: 768px) {
+  .AboutContent {
+    padding: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .AboutContent {
+    padding: 5px;
+  }
+}
+
   

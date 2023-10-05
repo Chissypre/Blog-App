@@ -32,7 +32,7 @@ const NewPost = ({
                 <input
                 id="imageFile"
                 type="file"
-                 accept="image/*" // Accept only image files
+                 accept="image/*" 
                   onChange={handleImageChange}
         />
                 <button type="submit">Submit</button>

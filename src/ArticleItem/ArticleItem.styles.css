@@ -1,17 +1,16 @@
 
   .article-item {
-    width: 30%;
-    margin: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     display: flex;
     flex-direction: column;
+    width: calc(33.33% - 30px); 
   }
   
   .article-info {
-    padding: 10px;
     flex-grow: 1;
     flex-direction:column;
+    margin: 0;
   }
   
   img {
@@ -61,3 +60,15 @@
     margin-top: 8px;
     align-self: flex-end;
   }
+  @media (max-width: 950px) {
+   
+    .article-item {
+      width: calc(50% - 30px); 
+    }
+  }
+  @media (max-width: 576px) {
+    .article-item {
+      width: 100%
+    }
+  }
+  

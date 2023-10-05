@@ -13,7 +13,6 @@ function EditPost({ articles, setArticles }) {
 
   const postToEdit = articles.find((article) => article.id === parseInt(id, 10));
 
-  // State to manage the edited post
   const [editedPost, setEditedPost] = useState({
     title: postToEdit.title,
     imageSrc: postToEdit.imageSrc,
@@ -89,7 +88,7 @@ function EditPost({ articles, setArticles }) {
         />
          <input
           type="file"
-          accept="image/*" // Accept only image files
+          accept="image/*" 
           onChange={(e) => {
             const selectedImage = e.target.files[0];
             setEditedPost({

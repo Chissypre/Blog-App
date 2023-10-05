@@ -56,11 +56,11 @@ button.searchButton {
 
   }
  @media (max-width: 636px) {
-  .searchContainer {
-    display: block;
-    align-items: center;
-    margin: 10px 40px;
-}
+   .searchContainer {
+      display: block;
+      align-items: center;
+      margin: 10px 40px;
+  }
 input#search {
   position: relative; 
   padding: 4px 4px;
