@@ -7,6 +7,7 @@ import Contact from './Contact/Contact';
 import ArticlePage from './ArticlePage/ArticlePage';
 import NewPost from './NewPost/NewPost';
 import EditPost from './EditPost/EditPost';
+import Missing from './Missing/Missing'
 import { format } from 'date-fns';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -158,7 +159,7 @@ const handleSubmit = (e) => {
         <Route path="about" element={<About/>} />
         <Route path="Newsletter" element={<Newsletter/>} />
         <Route path="Contact" element={<Contact/>} />
-       
+        <Route path="*" element={<Missing/>} />
         </Route>
       </Routes>
        </div>

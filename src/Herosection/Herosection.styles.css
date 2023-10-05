@@ -14,7 +14,7 @@
   padding: 50px 80px;
   max-width: 400px;
   text-align: center;
-  color: #fff;
+  color: orangered;
   z-index: 1;
   flex-direction: column;
   max-width: 600px;
@@ -34,7 +34,7 @@
 }
 
 .para {
-  color: white;
+  color: yellow;
   padding: 10px 10px;
   line-height: 2rem;
   font-weight: 600;
