@@ -1,15 +1,16 @@
+
 import Herosection from "../Herosection/Herosection"
 import './Layout.styles.css'
-
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
-
-
 import Footer from '../Footer/Footer';
 import { Outlet, useLocation } from 'react-router-dom';
 
 const Layout = ({search, setSearch}) => {
   const location = useLocation();
+  
+  
+  
 
   return (
     <div className="layout">

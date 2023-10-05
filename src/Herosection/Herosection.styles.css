@@ -6,6 +6,8 @@
     min-height:450px;
     background-position:center;
     position: relative;
+    overflow: hidden;
+    max-width: 100%;
 }
   
 .content {

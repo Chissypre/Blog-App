@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../assets/tech logo.svg";
 
 const Header = ({search, setSearch}) => {
-    return (
+   return(
         <header className="Header">
             <Link className='logo-container' to='/'>
           <Logo className='logo' />
@@ -25,7 +25,11 @@ const Header = ({search, setSearch}) => {
             </form>
             
         </header>
-    )
-}
+   )
+        }
+    
+
+
+
 
 export default Header

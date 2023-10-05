@@ -1,3 +1,4 @@
+import './App.css'
 import Layout from '../src/Layout/Layout';
 import Home from '../src/Home/Home';
 import About from '../src/About/About';
