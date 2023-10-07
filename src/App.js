@@ -136,7 +136,8 @@ const handleSubmit = (e) => {
          setSearch={setSearch}
         />}>
           <Route index element={<Home articles={searchResults} />}/>
-        <Route path="article" element={<NewPost
+          
+        <Route path='article' element={<NewPost
             handleSubmit={handleSubmit}
             handleImageChange={handleImageChange}
             articleTitle={articleTitle}
@@ -148,13 +149,14 @@ const handleSubmit = (e) => {
             imageFile={imageFile}
             setImageFile={setImageFile}
           />}/>
+          
         <Route path="/article/:id" element={<ArticlePage
          articles={articles} handleDelete={handleDelete}
           />}/>
-        <Route path="/edit/:id" element={<EditPost
+         <Route path="/edit/:id" element={<EditPost
        articles={articles}
        setArticles={setArticles}
-          />}/>
+          />}/> 
          
         <Route path="about" element={<About/>} />
         <Route path="Newsletter" element={<Newsletter/>} />
