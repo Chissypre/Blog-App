@@ -4,7 +4,7 @@
     border: 1px solid #ccc;
     display: flex;
     flex-direction: column;
-    width: calc(33.33% - 30px); 
+   
   }
   
   .article-info {
@@ -60,12 +60,7 @@
     margin-top: 8px;
     align-self: flex-end;
   }
-  @media (max-width: 950px) {
-   
-    .article-item {
-      width: calc(50% - 30px); 
-    }
-  }
+  
   @media (max-width: 576px) {
     .article-item {
       width: 100%

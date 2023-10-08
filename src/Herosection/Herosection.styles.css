@@ -36,11 +36,9 @@
   line-height: 48px;
   font-style: italic;
   font-weight: 800;
-  max-width: 1000px;
   justify-content: left;
   text-align: left;
   margin-left: 20px;
-  z-index: 4;
 }
 
 .para {
